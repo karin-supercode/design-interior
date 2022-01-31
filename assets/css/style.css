@@ -1,0 +1,264 @@
+/* 
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f  */
+
+/* ##################
+1. General Formatting
+2. Layout
+3. Styling 
+4. Mobile View
+#####################*/
+
+/* 1. General Formatting */
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Work+Sans:wght@300;400;500&display=swap");
+
+body {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 2em;
+  margin-bottom: 1.5em;
+  text-align: justify;
+  text-align-last: none;
+  letter-spacing: 0.1em;
+  padding: 0 8%;
+}
+
+/* ##################
+    2. Layout 
+#####################*/
+.gridContainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
+.displayBlock {
+  display: block;
+  width: 100%;
+}
+label {
+  margin-top: 1.5rem;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+.headerContainer {
+  background-color: #2e2e2e;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.navContainer {
+  justify-content: space-between;
+  flex: auto;
+}
+.navContainer ul {
+  padding-right: 10%;
+}
+
+.heroContainer,
+.storyContainer {
+  height: 90vh;
+}
+
+.heroArticleRight {
+  background: url(../img/design-interior-1.jpg) no-repeat center/cover;
+  height: 100%;
+}
+
+.featuredArticle {
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 10% 0 5%;
+}
+
+.featuredImgContainer {
+  gap: 5%;
+  margin: 0 5% 7%;
+  align-items: flex-start;
+}
+.centerText {
+  text-align: center;
+}
+
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  letter-spacing: 0.1em;
+  color: gray;
+}
+
+.formInnerContainer {
+  width: 70%;
+}
+.inputLabel {
+  font-size: 0.8rem;
+  padding: 2%;
+}
+.submitButton {
+  margin-top: 10%;
+  padding: 0.5em 1em;
+}
+
+.formContainer {
+  height: 60vh;
+  grid-template-columns: 60% 40%;
+}
+.formArticleLeft {
+  padding: 0 30% 0 15%;
+}
+.formArticleLeft h2 {
+  text-align: left;
+}
+.formArticleLeft p {
+  padding: unset;
+}
+
+.footerContainer {
+  height: 10vh;
+  justify-content: space-between;
+  margin: 0 6% 0 3%;
+}
+.paddingRight {
+  padding-right: 10%;
+}
+
+.figureImg {
+  width: 100%;
+}
+
+/* 3. Styling */
+.heroContainer,
+.featuredContainer {
+  background-color: #fff;
+}
+.hero h1,
+.hero h3 {
+  color: #000;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.hero h3 {
+  font-size: 1.5rem;
+}
+
+.videoContainer {
+  padding-bottom: 10%;
+  height: 40vh;
+}
+iframe {
+  height: 100%;
+  width: 33%;
+}
+
+.heroArticleLeft {
+  text-align: center;
+}
+
+.featuredContainer {
+  color: #000;
+}
+
+.formLabel {
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  width: 100%;
+}
+
+footer {
+  background-color: #1d2c2f;
+}
+footer .footerContainer .footerLink {
+  font-family: "Lora", serif;
+}
+
+/* 4. Mobile View : 600px */
+@media screen and (max-width: 600px) {
+  .flexContainer {
+    display: block;
+  }
+  .gridContainer {
+    display: block;
+  }
+  .headerContainer.flexContainer .navContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 5%;
+  }
+  .headerContainer.flexContainer {
+    display: flex;
+  }
+  .storyContainer {
+    height: initial;
+  }
+
+  .storyArticle,
+  .formArticleLeft {
+    margin: 10% 0;
+  }
+  .featuredArticle {
+    max-width: 70%;
+  }
+  figcaption {
+    margin-bottom: 5%;
+  }
+  .formArticleLeft,
+  .formInnerContainer {
+    padding: 0 15%;
+  }
+  .formInnerContainer{
+    width:100%;
+  }
+  .footerContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+  .legalAndContactContainer{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+  }
+  .love{
+    text-align: right;
+  }
+}
