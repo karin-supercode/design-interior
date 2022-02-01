@@ -29,7 +29,7 @@ a {
   color: unset;
   text-decoration: none;
 }
-ul {
+li {
   list-style-type: none;
 }
 h1,
@@ -48,7 +48,9 @@ p {
   letter-spacing: 0.1em;
   padding: 0 8%;
 }
-
+img{
+  width:100%;
+}
 /* ##################
     2. Layout 
 #####################*/
@@ -183,11 +185,11 @@ h2 {
 
 .videoContainer {
   padding-bottom: 10%;
-  height: 40vh;
+  height: 55vh;
 }
 iframe {
   height: 100%;
-  width: 33%;
+  width: 28%;
 }
 
 .heroArticleLeft {
